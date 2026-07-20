@@ -723,7 +723,10 @@ footer{background:var(--c-dark-brown);color:#e9dfd0;padding:var(--space-xl) 0 0;
 
   .hero-content{max-width:100%;}
   .hero-overlay{background:linear-gradient(180deg, rgba(43,31,26,.35) 0%, rgba(43,31,26,.78) 100%);}
-  .hero-content p{max-width:100%;}
+  .hero-content p{max-width:100%;font-size:.88rem;}
+  .hero-lyvora{font-size:2.1rem;letter-spacing:.03em;}
+  .hero-aura{font-size:.66rem;letter-spacing:.28em;margin:.4rem 0 1.1rem;}
+  .hero-content h1{font-size:1.35rem;line-height:1.35;margin-bottom:.8rem;}
   .btn{padding:.95rem 1.8rem;font-size:.76rem;width:100%;}
   .hero-content .btn{width:auto;}
 
@@ -782,7 +785,7 @@ footer{background:var(--c-dark-brown);color:#e9dfd0;padding:var(--space-xl) 0 0;
 @media (max-width:380px){
   .cat-grid{grid-template-columns:1fr 1fr;}
   .product-grid{grid-template-columns:1fr;}
-  .hero-lyvora{font-size:2.3rem;}
+  .hero-lyvora{font-size:1.9rem;}
   .nav-logo span{font-size:1.2rem;}
   .countdown{flex-wrap:wrap;justify-content:center;}
 }
