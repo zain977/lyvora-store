@@ -8,7 +8,15 @@ const LyStore = (function(){
   const FAV_KEY = 'lyvora_favorites';
 
   function read(key){ try{ return JSON.parse(localStorage.getItem(key)) || []; }catch(e){ return []; } }
-  function write(key, val){ localStorage.setItem(key, JSON.stringify(val)); }
+  function write(key, val){
+    try{ localStorage.setItem(key, JSON.stringify(val)); return true; }
+    catch(e){
+      if(typeof lyToast === 'function'){
+        lyToast('Could not save — your browser storage may be full or private browsing is restricting it.', 'error');
+      }
+      return false;
+    }
+  }
 
   function getCart(){ return read(CART_KEY); }
   function getFavorites(){ return read(FAV_KEY); }

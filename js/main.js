@@ -6,7 +6,7 @@
   'use strict';
 
   /* ---------------- Loading screen (very first paint) ---------------- */
-  window.addEventListener('load', ()=>{
+  document.addEventListener('DOMContentLoaded', ()=>{
     const ls = document.getElementById('loading-screen');
     if(ls){ setTimeout(()=>ls.classList.add('hide'), 150); }
   });
@@ -166,17 +166,19 @@
 
   /* ---------------- Newsletter ---------------- */
   function initNewsletter(){
-    const form = document.querySelector('.newsletter-form');
-    if(!form) return;
-    form.addEventListener('submit', (e)=>{
-      e.preventDefault();
-      const input = form.querySelector('input');
-      if(input.value && input.checkValidity()){
-        lyToast('Welcome to the inner circle — check your inbox soon.', 'success');
-        form.reset();
-      } else {
-        lyToast('Please enter a valid email address.', 'error');
-      }
+    const forms = document.querySelectorAll('.newsletter-form');
+    if(!forms.length) return;
+    forms.forEach(form=>{
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const input = form.querySelector('input');
+        if(input.value && input.checkValidity()){
+          lyToast('Welcome to the inner circle — check your inbox soon.', 'success');
+          form.reset();
+        } else {
+          lyToast('Please enter a valid email address.', 'error');
+        }
+      });
     });
   }
 
