@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Perfumes | LYVORA</title>
+<meta name="description" content="Shop LYVORA Perfumes — a signature you can wear.">
+<link rel="icon" href="../assets/images/logo.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-page="category" data-category="perfumes">
+<a href="#main" class="skip-link">Skip to content</a>
+<div id="loading-screen"><div class="loader-mark"></div></div>
+
+<header class="navbar scrolled">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/logo.png" alt="LYVORA logo">
+      <span>LYVORA</span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="makeup.html" class="">Makeup</a>
+      <a href="skincare.html" class="">Skin Care</a>
+      <a href="haircare.html" class="">Hair Care</a>
+      <a href="bodycare.html" class="">Body Care</a>
+      <a href="perfumes.html" class="active">Perfumes</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-switch" aria-label="Switch language"><span class="lang-text">AR</span></button>
+      <a href="favorites.html" class="nav-icon-btn" aria-label="Favorites">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7.5-4.9-10.1-9.3C.4 8.7 1.8 5 5.4 4.2 8 3.6 10.3 5 12 7.3 13.7 5 16 3.6 18.6 4.2 22.2 5 23.6 8.7 22.1 11.7 19.5 16.1 12 21 12 21Z"/></svg>
+        <span class="nav-badge fav-badge">0</span>
+      </a>
+      <a href="login.html" class="nav-icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+      <button class="nav-icon-btn" aria-label="Cart" data-open-cart>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="nav-badge cart-badge">0</span>
+      </button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div id="nav-overlay" class="overlay"></div>
+<nav class="mobile-nav">
+  <a href="../index.html">Home</a>
+  <a href="makeup.html">Makeup</a>
+  <a href="skincare.html">Skin Care</a>
+  <a href="haircare.html">Hair Care</a>
+  <a href="bodycare.html">Body Care</a>
+  <a href="perfumes.html">Perfumes</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main id="main" class="page-wrap" style="padding-top:0">
+  <section class="page-hero">
+    <img class="hero-bg" src="../assets/images/background_perfume.png" alt="Perfumes">
+    <div class="hero-overlay"></div>
+    <div class="container page-hero-content">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Perfumes</div>
+      <h1>Perfumes</h1>
+      <p>Layered, long-lasting fragrances crafted to become part of your story.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="bestseller">Best Sellers</button>
+        <button class="filter-chip" data-filter="new">New</button>
+        <button class="filter-chip" data-filter="sale">On Sale</button>
+      </div>
+      <div class="product-toolbar">
+        <span class="result-count" id="result-count"></span>
+        <div class="toolbar-controls">
+          <input type="search" class="input-field" id="search-input" placeholder="Search Perfumes...">
+          <select class="select-field" id="sort-select">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/images/logo.png" alt="LYVORA">
+        <p>LYVORA is a luxury cosmetics house crafting makeup, skin, hair, body and fragrance rituals designed to help every client live their aura.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="makeup.html">Makeup</a></li>
+          <li><a href="skincare.html">Skin Care</a></li>
+          <li><a href="haircare.html">Hair Care</a></li>
+          <li><a href="bodycare.html">Body Care</a></li>
+          <li><a href="perfumes.html">Perfumes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="cart.html">Shopping Cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:.85rem;color:#cbb9a8;margin-bottom:1rem;">Sign up for early access to new drops and offers.</p>
+        <form class="newsletter-form" style="max-width:100%;">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit" class="btn btn-outline" style="border-color:rgba(255,255,255,.3);color:#fff;">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 LYVORA. All rights reserved.</span>
+      <div class="footer-payments"><span>Cash on Delivery</span><span>Visa</span><span>Mastercard</span></div>
+    </div>
+  </div>
+</footer>
+
+<div id="drawer-overlay" class="overlay"></div>
+<aside id="cart-drawer" class="drawer">
+  <div class="drawer-head"><h3>Your Bag</h3><button id="drawer-close" class="drawer-close" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+  <div class="drawer-body" id="drawer-body"></div>
+  <div class="drawer-foot" id="drawer-foot">
+    <div class="subtotal"><span>Subtotal</span><strong id="drawer-subtotal">0 EGP</strong></div>
+    <a href="checkout.html" class="btn btn-primary btn-block">Checkout</a>
+    <a href="cart.html" class="btn btn-outline btn-block" style="margin-top:.7rem;">View Cart</a>
+  </div>
+</aside>
+
+<button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>window.LYVORA_ROOT='../';</script>
+<script src="../js/products.js"></script>
+<script src="../js/store.js"></script>
+<script src="../js/render.js"></script>
+<script src="../js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', ()=>{
+  const CAT = 'perfumes';
+  let items = lyByCategory(CAT);
+  let activeFilter = 'all';
+  let searchTerm = '';
+  let sortMode = 'featured';
+
+  function apply(){
+    let list = lyByCategory(CAT);
+    if(activeFilter==='bestseller') list = list.filter(p=>p.badge==='Best Seller');
+    if(activeFilter==='new') list = list.filter(p=>p.badge==='New');
+    if(activeFilter==='sale') list = list.filter(p=>p.oldPrice);
+    if(searchTerm) list = list.filter(p=>p.name.toLowerCase().includes(searchTerm));
+    if(sortMode==='price-asc') list = [...list].sort((a,b)=>a.price-b.price);
+    if(sortMode==='price-desc') list = [...list].sort((a,b)=>b.price-a.price);
+    if(sortMode==='rating') list = [...list].sort((a,b)=>b.rating-a.rating);
+    document.getElementById('result-count').textContent = list.length + ' products';
+    lyRenderGrid('#product-grid', list, {reveal:true});
+  }
+
+  document.querySelectorAll('.filter-chip').forEach(chip=>{
+    chip.addEventListener('click', ()=>{
+      document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
+      chip.classList.add('active');
+      activeFilter = chip.dataset.filter;
+      apply();
+    });
+  });
+  document.getElementById('search-input').addEventListener('input', (e)=>{
+    searchTerm = e.target.value.trim().toLowerCase();
+    apply();
+  });
+  document.getElementById('sort-select').addEventListener('change', (e)=>{
+    sortMode = e.target.value;
+    apply();
+  });
+
+  apply();
+});
+</script>
+</body>
+</html>
