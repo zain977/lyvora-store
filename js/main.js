@@ -5,6 +5,24 @@
 (function(){
   'use strict';
 
+  /* ---------------- Mobile-nav visibility safety net ----------------
+     Some mobile browsers can fail to match the CSS media query reliably
+     (viewport quirks, stale layout viewport on first paint). This forces
+     the correct hamburger / nav-links visibility from actual measured
+     width, re-checked on resize/orientation change, so the UI can never
+     get stuck showing the desktop nav on a phone screen. */
+  function syncNavVisibility(){
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if(!hamburger || !navLinks) return;
+    const isMobile = window.innerWidth <= 980;
+    hamburger.style.setProperty('display', isMobile ? 'flex' : 'none', 'important');
+    navLinks.style.setProperty('display', isMobile ? 'none' : 'flex', 'important');
+  }
+  syncNavVisibility();
+  window.addEventListener('resize', syncNavVisibility);
+  window.addEventListener('orientationchange', syncNavVisibility);
+
   /* ---------------- Loading screen (very first paint) ---------------- */
   document.addEventListener('DOMContentLoaded', ()=>{
     const ls = document.getElementById('loading-screen');

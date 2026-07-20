@@ -661,8 +661,6 @@ footer{background:var(--c-dark-brown);color:#e9dfd0;padding:var(--space-xl) 0 0;
 .qv-info{padding:2.4rem;}
 
 /* Skip link for a11y */
-.skip-link{position:absolute;left:-999px;top:0;background:var(--c-dark-brown);color:#fff;padding:.8rem 1.2rem;z-index:99999;}
-.skip-link:focus{left:1rem;top:1rem;}
 :focus-visible{outline:2px solid var(--c-rose-gold);outline-offset:2px;}
 
 /* ========================================================================
